@@ -1,0 +1,16 @@
+{
+  "name": "Koans",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.4.8",
+    "angular-resource": "1.4.8",
+    "angular-ui-router": "0.2.15"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.4.8",
+    "es5-shim": "4.1.14"
+  },
+  "resolutions": {
+    "angular": "1.4.8"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Koans",
+  "version": "0.0.1",
+  "description": "AngularJS Koans",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-cli": "0.1.13",
+    "grunt-concurrent": "2.0.4",
+    "grunt-contrib-connect": "0.11.2",
+    "grunt-contrib-jshint": "0.11.3",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-jscs": "2.3.0",
+    "grunt-karma": "0.12.1",
+    "grunt-newer": "1.1.1",
+    "grunt-notify": "0.4.3",
+    "jasmine-core": "2.3.4",
+    "jit-grunt": "0.9.1",
+    "karma": "0.13.15",
+    "karma-jasmine": "0.3.6",
+    "karma-phantomjs-launcher": "0.2.1",
+    "open": "0.0.5",
+    "phantomjs": "1.9.18",
+    "request": "2.65.0",
+    "serve-static": "1.10.0"
+  },
+  "engines": {
+    "node": ">=4.2.1",
+    "npm": ">=3.3.10"
+  }
+}
