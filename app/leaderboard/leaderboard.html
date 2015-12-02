@@ -9,6 +9,8 @@
 
 	<h2>Leaderboard (with player names)</h2>
 	<ol>
-		<li ng-repeat="l in niceLeaderboard">{{l.name}}</li>
+		<li ng-repeat="l in niceLeaderboard">
+			<a ui-sref="player(l)">{{l.name}}</a>
+		</li>
 	</ol>
 </div>

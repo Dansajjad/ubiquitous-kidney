@@ -8,6 +8,10 @@ angular.module('MyApp')
       .state('leaderboard', {
         url: '/leaderboard',
         template: '<div sp-leaderboard></div>'
+      })
+      .state('player', {
+        url: '/player?id',
+        template: 'TODO, if really, really keen :)'
       });
   }])
   .factory('leaderboard', function ($resource) {
