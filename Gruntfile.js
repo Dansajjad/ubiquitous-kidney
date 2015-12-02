@@ -19,9 +19,6 @@ module.exports = function (grunt) {
         files: [
           'app/{,*/}{,*/}*.html',
           'app/{,*/}{,*/}*.js',
-          'app/assets/styles/*.css',
-          'app/assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          'app/assets/icons/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           '!app/bower_components/**'
         ]
       }
@@ -46,15 +43,6 @@ module.exports = function (grunt) {
         options: {
           livereload: 35729,
           base: [
-            'app'
-          ]
-        }
-      },
-      test: {
-        options: {
-          port: 9001,
-          base: [
-            'test',
             'app'
           ]
         }
@@ -91,13 +79,12 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('serve', function () {
+  grunt.registerTask('default', function () {
     var request = require('request'),
       open = require('open'),
       url = 'http://localhost:9000',
       interval;
 
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
     interval = setInterval(function () {
       request('http://localhost:35729', function (err) {
         if (!err && interval) {

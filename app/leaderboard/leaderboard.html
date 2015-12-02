@@ -1,12 +1,14 @@
 <div>
 	<h1>Promises Koan</h1>
 
-	<h2>Leaderboard</h2>
+	<h2>Leaderboard (only playerIds, no player names)</h2>
 	<div ng-repeat="l in leaderboard">{{l.id}}</div>
 
 	<h2>Player</h2>
 	Name: {{player.name}}
 
-	<h2>TODO - nicely printed leaderboard, something like this</h2>
-	<div ng-repeat="l in niceLeaderboard">{{$index + 1}}. {{l.name}}</div>
+	<h2>Leaderboard (with player names)</h2>
+	<ol>
+		<li ng-repeat="l in niceLeaderboard">{{l.name}}</li>
+	</ol>
 </div>
