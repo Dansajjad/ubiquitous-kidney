@@ -50,15 +50,6 @@ module.exports = function (grunt) {
           ]
         }
       },
-      browserSync: {
-        options: {
-          port: 2999,
-          protocol: 'http',
-          base: [
-            'app'
-          ]
-        }
-      },
       test: {
         options: {
           port: 9001,
@@ -97,23 +88,6 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
-    },
-    browserSync: {
-      bsFiles: {
-        src: '<%= watch.livereload.files %>'
-      },
-      options: {
-        watchTask: true,
-        host: '0.0.0.0',
-        proxy: 'localhost:2999',
-        open: false,
-        ghostMode: {
-          clicks: true,
-          scroll: true,
-          location: true,
-          forms: true
-        }
-      }
     }
   });
 
@@ -136,8 +110,6 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'connect:livereload',
-      'connect:browserSync',
-      'browserSync',
       'concurrent:watch'
     ]);
   });

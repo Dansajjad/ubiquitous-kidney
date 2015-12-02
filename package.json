@@ -1,11 +1,10 @@
 {
   "name": "Koans",
   "version": "0.0.1",
-  "description": "AngularJS Koans",
+  "description": "AngularJS Promises Koans",
   "dependencies": {},
   "devDependencies": {
     "grunt": "0.4.5",
-    "grunt-browser-sync": "2.2.0",
     "grunt-cli": "0.1.13",
     "grunt-concurrent": "2.1.0",
     "grunt-contrib-connect": "0.11.2",
