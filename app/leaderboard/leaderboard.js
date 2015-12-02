@@ -22,8 +22,15 @@ angular.module('MyApp')
     'use strict';
     return $resource('/assets/data/player/:id.json');
   })
-  .service('leaderboardService', ['$q', 'leaderboard', 'player', function ($q, leaderboard, player) {
+  .service('leaderboardService', ['$timeout', '$q', 'leaderboard', 'player', function ($timeout, $q, leaderboard, player) {
     'use strict';
+    this.fetchGreeting = function () {
+      var deferred = $q.defer();
+      $timeout(function () {
+        deferred.resolve('Hello World!');
+      }, 1000);
+      return deferred.promise;
+    };
     this.fetchLeaderboard = function () {
       return leaderboard.query().$promise;
     };
@@ -45,6 +52,10 @@ angular.module('MyApp')
     'use strict';
     return {
       link: function (scope) {
+        leaderboardService.fetchGreeting()
+          .then(function (greeting) {
+            scope.greeting = greeting;
+          });
         leaderboardService.fetchLeaderboard()
           .then(function (leaderboard) {
             scope.leaderboard = leaderboard;
