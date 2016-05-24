@@ -43,7 +43,8 @@ module.exports = function (grunt) {
         options: {
           livereload: 35729,
           base: [
-            'app'
+            'app',
+            'test'
           ]
         }
       }
@@ -67,8 +68,8 @@ module.exports = function (grunt) {
         logConcurrentOutput: true
       },
       watch: [
-        'watch:livereload',
-        'watch:js'
+        'watch:livereload'
+        // 'watch:js'
       ]
     },
     karma: {
