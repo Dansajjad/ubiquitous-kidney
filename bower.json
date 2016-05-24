@@ -2,16 +2,16 @@
   "name": "Koans",
   "version": "0.0.1",
   "dependencies": {
-    "angular": "1.4.8",
-    "angular-resource": "1.4.8",
-    "angular-ui-router": "0.2.15"
+    "angular": "1.5.5",
+    "angular-resource": "1.5.5",
+    "angular-ui-router": "0.3.0"
   },
   "devDependencies": {
-    "angular-mocks": "1.4.8",
-    "es5-shim": "4.1.14",
+    "angular-mocks": "1.5.5",
+    "es5-shim": "4.5.8",
     "jasmine-core": "2.4.1"
   },
   "resolutions": {
-    "angular": "1.4.8"
+    "angular": "1.5.5"
   }
 }
